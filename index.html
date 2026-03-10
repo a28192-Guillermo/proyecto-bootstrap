@@ -3,16 +3,87 @@
     <head>
         <meta charset="utf-8">
         <title>Web</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     </head>
     <body>
-        <header>
-            <p>Header</p>
+        <header class="bg-dark text-white text-center p-4">
+            <h1>Festival Artes Manuales</h1>
+            <p>Un evento lleno de talleres increibles donde aprender sobre las artes manuales más populares</p>
         </header>
         <main>
-            <p>Main</p>
+            <!-- Contenedor principal -->
+            <div class="container mt-5">
+
+            <!-- Tabla de horarios -->
+            <h2 class="mb-3">Horarios del los talleres</h2>
+
+            <table class="table table-striped table-bordered">
+                <thead class="table-dark">
+                <tr>
+                    <th>Hora</th>
+                    <th>Taller</th>
+                    <th>Aula</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>8:00</td>
+                    <td>Origami</td>
+                    <td>A1</td>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td>Pinturas acrílicas</td>
+                    <td>A2</td>
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>Alfarería</td>
+                    <td>A3</td>
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>Dibujo estilo cómic</td>
+                    <td>A1</td>
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>Bisutería</td>
+                    <td>A2</td>
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td>Bordados</td>
+                    <td>A3</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- Formulario de inscripción -->
+            <h2 class="mt-5 mb-3">Inscripción al Evento</h2>
+
+            <form>
+                <div class="mb-3">
+                <label class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" placeholder="Introduce tu nombre">
+                </div>
+
+                <div class="mb-3">
+                <label class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" placeholder="ejemplo@email.com">
+                </div>
+
+                <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input">
+                <label class="form-check-label">Acepto los términos y condiciones</label>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Inscribirme</button>
+            </form>
         </main>
-        <footer>
-            <p>Footer</p>
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center p-3 mt-5">
+        <p>© 2026 Festival Artes Manuales</p>
         </footer>
     </body>
 </html>
